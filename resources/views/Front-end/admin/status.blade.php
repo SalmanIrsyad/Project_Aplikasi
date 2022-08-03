@@ -24,10 +24,10 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/beranda">Beranda</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/toko">Toko</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/transaksi">Transaksi</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/profil">Pengaturan</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/beranda_admin">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/toko_admin">Toko</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/pesanan_admin">Transaksi</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/akun_admin">Pengaturan</a></li>
                         </ul>
                     </ul>
                 </div>
@@ -36,8 +36,32 @@
         <!-- Header-->
         <!-- Sidebar -->
    <!-- @include('layouts.component.sidebar') -->
+   <div class="container">
+    <form class="d-flex">
+      <input class="form-control me-2 " type="search" placeholder="No.Pesanan" aria-label="Search">
+      <button class="btn btn-outline-dark" type="submit">Cari</button>
+    </form>
+   </div>
    <br><br>
         <div class="container">
+          <div class="row">
+            <div class="col-9">
+              <div class="card " style="width: 15rem;">
+                <div class="card-body">
+                  No.Pesanan : 112345577
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div align= "right">
+              <div class="card " style="width: 15rem;">
+                <div class="card-body">
+                 17 - 05 - 2022
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
             <!-- Produk 1-->
             <div class="card">
                 <div class="card-body">
@@ -73,29 +97,9 @@
               <!-- Metode Pembayaran-->
             <div class="card">
               <div class="card-body">
-                <h3><b>Metode Pembayaran : </b></h3>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    COD
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    M-Banking
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    E-Money
-                  </label>
-                </div>
-                <br><br>
                 <h3>Total Produk : Rp.60.000</h3>
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent" align="right">
-                  <div class="text-right"><a class="btn btn-outline-dark mt-auto" href="#">Konfirmasi Pemesanan</a></div>
+                  <div class="text-right"><a class="btn btn-outline-dark mt-auto" href="#">Konfirmasi Selesai</a></div>
               </div>
               </div>
             </div>
